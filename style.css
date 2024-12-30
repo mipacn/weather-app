@@ -1,0 +1,108 @@
+* {
+	font-family: "Noto Sans", sans-serif;
+	color: white;
+}
+
+html {
+	background-color: black;
+	height: 100%;
+	margin: 0;
+}
+body {
+	box-sizing: border-box;
+	height: 100%;
+	width: 30vw;
+	margin: auto;
+	border: 1vh solid black;
+	border-radius: 4vh;
+	background-image: url("night.jpg");
+	background-size: cover;
+	position: relative;
+}
+
+.system {
+	position: absolute;
+	cursor: pointer;
+	margin: 0;
+	top: 2vh;
+	left: 3vh;
+}
+
+input {
+	background-color: transparent;
+	border: 0;
+	position: absolute;
+	top: 2vh;
+	right: 0;
+	overflow: scroll;
+	font-size: 2.25vh;
+	width: 8vw !important;
+}
+
+input::placeholder {
+	color: white;
+}
+
+input:focus {
+	outline: none;
+}
+
+.data {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 2vh;
+}
+
+.top,
+.bottom {
+	display: flex;
+	flex-direction: column;
+}
+
+.top > p {
+	margin: 0;
+}
+
+.conditions {
+	padding-left: 0.5vh;
+	font-size: 3vh;
+	padding-bottom: -1vh;
+}
+
+.location {
+	font-weight: bold;
+	font-size: 6vh;
+}
+
+.medium {
+	margin-top: 3vh;
+	position: relative;
+	font-weight: bold;
+}
+
+.temperature {
+	font-size: 21vh;
+	margin: 0;
+}
+
+.unit {
+	position: absolute;
+	right: -3vh;
+	top: 1.5vh;
+	font-size: 3vh;
+}
+
+.bottom {
+	margin-top: 7.5vh;
+	gap: 1vh;
+}
+
+.bottom > p {
+	margin: 0;
+	letter-spacing: 0.1vh;
+	font-weight: 100;
+	font-size: 3vh;
+}
